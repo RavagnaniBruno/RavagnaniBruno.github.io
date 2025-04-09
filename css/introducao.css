@@ -1,4 +1,4 @@
-.introducao{
+.introducao {
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
@@ -8,45 +8,40 @@
   align-items: center;
 }
 
-.introducao{
-  h1{
-    font-size: 4.5rem;
-    line-height: 1.125;
-    margin-bottom: 30px;
-    position: relative;
-
-  }
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-.introducao h1::before{
+.introducao h1::before {
   content: "";
   display: block;
   width: 130px;
   height: 100px;
-  background-image: url(/img/detalhe.svg);
+  background: url(/img/detalhe.svg);
   position: absolute;
   top: -15px;
   left: -40px;
   z-index: -1;
-
 }
 
-.introducao p{
+.introducao p {
   font-size: 1.5rem;
   color: #525252;
 }
 
-@media (max-width: 1000px){
-  .introducao h1{
+@media (max-width: 1000px) {
+  .introducao h1 {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .introducao {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    
   }
   .introducao h1 {
     font-size: 2rem;
@@ -55,11 +50,10 @@
     width: 60px;
     top: -50px;
     height: 90px;
-    
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .introducao img {
     display: none;
   }
