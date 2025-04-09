@@ -1,0 +1,35 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente marrom -->
+    <linearGradient id="brownGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d2b48c"/>
+      <stop offset="100%" stop-color="#5c4033"/>
+    </linearGradient>
+
+    <!-- Sombra suave -->
+    <filter id="textShadow">
+      <feDropShadow dx="1.5" dy="1.5" stdDeviation="1" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo opcional (comente essa linha se quiser fundo transparente) -->
+  <!-- <rect width="300" height="80" fill="#111" /> -->
+
+  <!-- Nome "Bruno" -->
+  <text x="20" y="55"
+        font-family="Arial, sans-serif"
+        font-size="40"
+        fill="url(#brownGradient)"
+        filter="url(#textShadow)">
+    Bruno
+  </text>
+
+  <!-- Ícone de halteres ao lado do nome -->
+  <g transform="translate(200, 30)" fill="url(#brownGradient)">
+    <rect x="0" y="5" width="5" height="20" />
+    <rect x="5" y="0" width="5" height="30" />
+    <rect x="10" y="12" width="20" height="6" />
+    <rect x="30" y="0" width="5" height="30" />
+    <rect x="35" y="5" width="5" height="20" />
+  </g>
+</svg>
